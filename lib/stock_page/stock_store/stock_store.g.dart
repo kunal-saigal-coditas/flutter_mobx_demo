@@ -106,6 +106,18 @@ mixin _$StockStore on _StockStore, Store {
   }
 
   @override
+  void addManyStocks() {
+    final _$actionInfo = _$_StockStoreActionController.startAction(
+      name: '_StockStore.addManyStocks',
+    );
+    try {
+      return super.addManyStocks();
+    } finally {
+      _$_StockStoreActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   void stopStreaming() {
     final _$actionInfo = _$_StockStoreActionController.startAction(
       name: '_StockStore.stopStreaming',

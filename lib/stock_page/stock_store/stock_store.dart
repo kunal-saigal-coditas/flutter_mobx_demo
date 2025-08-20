@@ -59,6 +59,13 @@ abstract class _StockStore with Store {
     _subscription = stream.listen((_) {});
   }
 
+  @action
+  void addManyStocks() {
+    for (var i = 0; i < 500; i++) {
+      stocks.add(Stock("STOCK_$i", 100 + _random.nextDouble() * 900));
+    }
+  }
+
   /// Stop updates
   @action
   void stopStreaming() {

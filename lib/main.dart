@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx_demo/notes_page/notes_page.dart';
 import 'package:flutter_mobx_demo/stock_page/stock_page.dart';
+import 'package:flutter_mobx_demo/stock_page_with_bloc/stock_page_with_bloc.dart';
 import 'package:flutter_mobx_demo/stream_page/stream_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: StockScreen(),
+      home: StockScreenWithBloc(),
     );
   }
 }
